@@ -15,6 +15,7 @@
 		2EA6BE1D20C144AB005887D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6BE1C20C144AB005887D3 /* main.m */; };
 		2EA6BE2720C144AB005887D3 /* WebViewCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6BE2620C144AB005887D3 /* WebViewCacheTests.m */; };
 		2EA6BE3220C144AB005887D3 /* WebViewCacheUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6BE3120C144AB005887D3 /* WebViewCacheUITests.m */; };
+		2EE8D15B20C94AE80012A66E /* WXSWebProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE8D15A20C94AE80012A66E /* WXSWebProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		2EA6BE2D20C144AB005887D3 /* WebViewCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA6BE3120C144AB005887D3 /* WebViewCacheUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewCacheUITests.m; sourceTree = "<group>"; };
 		2EA6BE3320C144AB005887D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE8D15920C94AE80012A66E /* WXSWebProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXSWebProtocol.h; sourceTree = "<group>"; };
+		2EE8D15A20C94AE80012A66E /* WXSWebProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXSWebProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				2EA6BE0E20C144AB005887D3 /* AppDelegate.m */,
 				2EA6BE1020C144AB005887D3 /* ViewController.h */,
 				2EA6BE1120C144AB005887D3 /* ViewController.m */,
+				2EE8D15920C94AE80012A66E /* WXSWebProtocol.h */,
+				2EE8D15A20C94AE80012A66E /* WXSWebProtocol.m */,
 				2EA6BE1320C144AB005887D3 /* Main.storyboard */,
 				2EA6BE1620C144AB005887D3 /* Assets.xcassets */,
 				2EA6BE1820C144AB005887D3 /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA6BE1220C144AB005887D3 /* ViewController.m in Sources */,
+				2EE8D15B20C94AE80012A66E /* WXSWebProtocol.m in Sources */,
 				2EA6BE1D20C144AB005887D3 /* main.m in Sources */,
 				2EA6BE0F20C144AB005887D3 /* AppDelegate.m in Sources */,
 			);
