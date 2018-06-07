@@ -46,7 +46,7 @@
  */
 
 #import "QNSURLSessionDemux.h"
-#import "FQLHTTPDNSCookieManager.h"
+
 
 @interface QNSURLSessionDemuxTaskInfo : NSObject
 
@@ -93,9 +93,6 @@
 - (void)performBlockOnClientThread:(dispatch_block_t)block
 {
     
-    if ([NSThread currentThread] != self.thread) {
-        FQLLogInfo(@"Assert [performBlockOnClientThread] : [NSThread currentThread] != self.thread");
-    }
     if (block) {
         block();
     }
@@ -157,12 +154,6 @@
     
     if (request) {
         task = [self.session dataTaskWithRequest:request];
-    }else {
-        FQLLogInfo(@"Assert [dataTaskWithRequest:originalRequest] : request == nil");
-    }
-    
-    if (task == nil) {
-        FQLLogInfo(@"Assert [dataTaskWithRequest:originalRequest] : task == nil");
     }
     
     taskInfo = [[QNSURLSessionDemuxTaskInfo alloc] initWithTask:task delegate:delegate modes:modes];
@@ -178,10 +169,6 @@
     QNSURLSessionDemuxTaskInfo *    result;
     @synchronized (self) {
         result = self.taskInfoByTaskID[@(task.taskIdentifier)];
-        if (!result) {
-            FQLLogInfo(@"Assert [taskInfoForTask] :result = nil");
-        }
-        
     }
     return result;
 }
