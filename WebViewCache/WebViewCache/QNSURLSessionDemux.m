@@ -186,7 +186,6 @@
         if (completionHandler) {
             completionHandler(newRequest);
         }
-        
     }
 }
 
